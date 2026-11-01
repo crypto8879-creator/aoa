@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <button onclick="navigator.clipboard.writeText(c)">Send</button>
+    <script>
+        let c = "";
+        onload = async () => c = await (await fetch('https://raw.githubusercontent.com/codingstella/projects/refs/heads/main/10%20Different%20Spinner/index.html')).text();
+    </script>
+</body>
+</html>
+
